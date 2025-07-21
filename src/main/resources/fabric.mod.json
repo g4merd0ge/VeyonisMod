@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "veyonis",
+	"version": "${version}",
+	"name": "Veyonis Mod",
+	"description": "Mod adding Dodiks by Veyonis",
+	"authors": [
+		"Kesquada"
+	],
+	"contact": {
+		"homepage": "https://t.me/veyonis",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "BMSTU",
+	"icon": "assets/veyonis/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dodiks.veyonis.VeyonisMod"
+		],
+		"fabric-datagen": [
+			"com.dodiks.veyonis.VeyonisModDataGenerator"
+		],
+		"client": [
+			"com.dodiks.veyonis.VeyonisModClient"
+		]
+	},
+	"mixins": [
+		"veyonis.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
