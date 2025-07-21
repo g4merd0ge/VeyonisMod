@@ -1,5 +1,6 @@
 package com.dodiks.veyonis;
 
+import com.dodiks.veyonis.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ public class VeyonisMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
 	}
 }
