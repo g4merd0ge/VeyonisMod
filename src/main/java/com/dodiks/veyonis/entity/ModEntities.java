@@ -10,10 +10,9 @@ import net.minecraft.util.Identifier;
 
 public class ModEntities {
     public static final EntityType<FemcelEntity> FEMCEL = Registry.register(Registries.ENTITY_TYPE, Identifier.of(VeyonisMod.MOD_ID, "femcel"),
-            EntityType.Builder.create(FemcelEntity::new, SpawnGroup.CREATURE).dimensions(1f, 1.72f).build());
+            EntityType.Builder.create(FemcelEntity::new, SpawnGroup.CREATURE).dimensions(0.7f, 1.9f).build());
 
     public static void registerModEntities() {
         VeyonisMod.LOGGER.info("Registering Mod Entities for " + VeyonisMod.MOD_ID);
-
     }
 }

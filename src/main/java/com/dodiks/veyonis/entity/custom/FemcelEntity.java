@@ -28,9 +28,9 @@ public class FemcelEntity extends PassiveEntity {
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
 
-        this.goalSelector.add(1, new TemptGoal(this, 1.25D, Ingredient.ofItems(ModItems.MARLBORO), false));
+        this.goalSelector.add(1, new TemptGoal(this, 0.35D, Ingredient.ofItems(ModItems.MARLBORO), false));
 
-        this.goalSelector.add(2, new WanderAroundFarGoal(this, 1.0D));
+        this.goalSelector.add(2, new WanderAroundFarGoal(this, 0.3D));
         this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
         this.goalSelector.add(4, new LookAroundGoal(this));
     }
